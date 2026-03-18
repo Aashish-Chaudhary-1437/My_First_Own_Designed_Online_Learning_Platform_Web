@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5)),url("/Imges/Gemini_Generated_Image_q02if5q02if5q02i.png");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(2px) brightness(0.8);
+    z-index: -1;
+}
+
+ main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.container {
+    width: 80%;
+    min-height: 50vh;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.subject {
+    border: 1px solid white;
+    padding: 20px;
+    width: 80%; 
+    margin-left: 20px; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 1px 1px 12px #fefae0;
+}
+
+.subject h3 {
+    margin-bottom: 10px;
+}
+
+.subject ul {
+    list-style: none; 
+    padding-left: 10px;
+    margin-bottom: 40px; 
+}
+
+
+.subject li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    border: none; 
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.subject li p {
+    flex: 2; 
+    background-color: #EBB0F1; 
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+.subject li a {
+    flex: 1; 
+    background-color: #FFB1BB; 
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.subject li a:hover {
+    opacity: 0.9;
+    background-color:#EBB0F1 ;
+    transform: scale(0.95);
+}
+
+.subject li p:hover{
+    background-color: #FFB1BB;
+    transform: scale(0.95);
+}
+
+#QB {
+    align-self: flex-start;
+    border: 1px solid white;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
